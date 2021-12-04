@@ -1,6 +1,7 @@
-.headshot {
+.profile-picture {
   border-radius: 50%;
 }
+
 html,
 body {
   display: flex;
@@ -12,28 +13,40 @@ body {
 }
 
 .wrapper {
-  background-color: black;
+  background-color: rgb(12, 12, 12);
 
-  max-width: 50%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
-  height: 80%;
+  height: 100%;
 }
 
-.left,
+.left {
+  background-color: lightblue;
+
+  margin: 5px;
+  max-width: 60%;
+  padding-left: 5%;
+  padding-right: 5%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .right {
   background-color: lightblue;
 
   margin: 5px;
-  max-width: 50%;
+  max-width: 40%;
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
-.left {
+.left,
+.right {
   align-items: center;
   justify-content: center;
 }
@@ -55,34 +68,8 @@ body {
   margin-bottom: 2px;
 }
 
-.profile-picture {
-  border-radius: 50%;
-}
-
 .social-links {
   list-style: none;
   padding-left: 0px;
   font-size: 18px;
-}
-
-.social-links li {
-  display: inline-block;
-  margin-right: 8px;
-}
-
-.social-links a {
-  text-decoration: none;
-  padding: 4px;
-}
-
-.social-links a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.body {
-  background: linear-gradient(
-    to bottom,
-    rgb(239, 231, 245) 0%,
-    rgba(170, 221, 235, 1) 100%
-  );
 }
